@@ -12,20 +12,100 @@
     --fw-extra-bold:800;
 }
 
+/*General Styling*/
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*8. Create a root stacking context */
+#root,
+#__next {
+    isolation: isolate;
+}
 body{
     font-family: 'Inter', sans-serif;
     font-size:15px;
     font-weight:var(--fw-regular);
     color:var(--clr-neutral-dark-blue);
     background-color:var(--clr-neutral-white);
+    min-height: 100vh;
 }
 
-main{
-    display: grid;
+.main-container{
+    margin: 15px;
 }
+
+.navbar{
+    display:flex;
+}
+
+.navbar__logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    position: left;
+}
+
+.navbar__links{
+    display: none;
+    margin-left: auto;
+}
+
+
