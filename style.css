@@ -88,6 +88,7 @@ body{
 
 .main-container{
     margin: 15px;
+    display: grid;
 }
 
 .navbar{
@@ -106,6 +107,7 @@ body{
 .navbar__links{
     display: none;
     margin-left: auto;
+
 }
 
 
