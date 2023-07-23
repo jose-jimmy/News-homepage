@@ -107,7 +107,7 @@ body{
 .navbar__links{
     display: none;
     margin-left: auto;
-
+    display: grid;
 }
 
 
