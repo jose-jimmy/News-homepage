@@ -192,6 +192,7 @@ p{
 .third-section{
     display: grid;
     padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .third-section .item{
